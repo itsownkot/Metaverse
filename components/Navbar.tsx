@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import styles from "@/styles";
 import { navVariants } from "@/utils/motion";
+import Image from "next/image";
 
 const Navbar = () => {
   return (
@@ -14,7 +15,7 @@ const Navbar = () => {
     >
       <div className="gradient-01 w-[50%] absolute inset-0" />
       <div className={`${styles.innerWidth} flex justify-between mx-auto`}>
-        <img
+        <Image
           src="/search.svg"
           alt="search"
           className="w-[24px] h-[24px] object-contain cursor-pointer z-50"
@@ -22,7 +23,7 @@ const Navbar = () => {
         <h2 className="font-extrabold text-white text-[24px] leading-[30px]">
           METAVERSE
         </h2>
-        <img
+        <Image
           src="/menu.svg"
           alt="menu"
           className="w-[24px] h-[24px] object-contain cursor-pointer"

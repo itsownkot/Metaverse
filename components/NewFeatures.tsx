@@ -1,4 +1,5 @@
 import styles from "@/styles";
+import Image from "next/image";
 
 const NewFeatures = ({
   title,
@@ -14,7 +15,7 @@ const NewFeatures = ({
       <div
         className={`${styles.flexCenter} w-[70px] h-[70px] rounded-[24px] bg-[#323f5d]`}
       >
-        <img src={imgUrl} alt="icon" className="w-1/2 h-1/2 object-contain" />
+        <Image src={imgUrl} alt="icon" className="w-1/2 h-1/2 object-contain" />
       </div>
       <h1 className="mt-[26px] font-bold text-[24px] text-white leading-[30px]">
         {title}
